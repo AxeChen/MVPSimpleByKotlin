@@ -16,7 +16,7 @@ import java.util.*
 /**
  * @Author Zaifeng
  * @Create 2017/8/9 0009
- * @Description Content
+ * @Description 适配器
  */
 class MainListAdapter(context: Context, users: ArrayList<UserBean>?) : Adapter<RecyclerView.ViewHolder>() {
 
@@ -37,7 +37,6 @@ class MainListAdapter(context: Context, users: ArrayList<UserBean>?) : Adapter<R
     }
 
     override fun getItemCount(): Int {
-
         return array?.size ?: 0
     }
 
@@ -51,7 +50,6 @@ class MainListAdapter(context: Context, users: ArrayList<UserBean>?) : Adapter<R
     }
 
     class MyViewHolder : RecyclerView.ViewHolder {
-
         var ivAvatar: ImageView? = null
         var tvName: TextView? = null
         var tvDes: TextView? = null
